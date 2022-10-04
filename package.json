@@ -1,0 +1,24 @@
+{
+  "name": "w2ch2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArnauOriol/202209-w2ch2-arnau-oriol.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArnauOriol/202209-w2ch2-arnau-oriol/issues"
+  },
+  "homepage": "https://github.com/ArnauOriol/202209-w2ch2-arnau-oriol#readme",
+  "devDependencies": {
+    "husky": "^8.0.0"
+  }
+}
