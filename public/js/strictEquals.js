@@ -4,12 +4,11 @@ export const strictEquals = (valor1, valor2) => {
     Object.is(typeof valor2, "number")
   ) {
     if (Number.isNaN(valor1) && Number.isNaN(valor2)) {
-      return false;
+      return [valor1, valor2, false];
     }
-    if (!Number.isNaN(valor1) && !Number.isNaN(valor2)) {
-      valor1 += 1;
-      valor2 += 1;
+    if (valor1 <= 0 && valor2 <= 0) {
+      return [valor1, valor2, true];
     }
   }
-  return Object.is(valor1, valor2);
+  return [valor1, valor2, Object.is(valor1, valor2)];
 };
