@@ -6,7 +6,7 @@ export const strictEquals = (valor1, valor2) => {
     if (Number.isNaN(valor1) && Number.isNaN(valor2)) {
       return [valor1, valor2, false];
     }
-    if (valor1 <= 0 && valor2 <= 0) {
+    if (valor1 <= 0 && valor1 >= 0 && valor2 <= 0 && valor2 >= 0) {
       return [valor1, valor2, true];
     }
   }
